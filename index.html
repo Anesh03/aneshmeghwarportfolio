@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 2000;
+            background: #121212;
+        
+            color: #f7f5f2;
+            text-align: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 50px;
+            background: rgba(35, 35, 35, 0.7);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            padding: 0;
+            margin: 40;
+            
+        }
+        .navbar a {
+            color: #f5f5f5;
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: bold;
+            transition: color 0.9s ease;
+        }
+        .navbar a:hover {
+            color: #e09526;
+        }
+        .profile-section {
+            margin-top: 120px;
+            text-align: center;
+        }
+        .profile-pic {
+            width: 200px;
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(240, 239, 238, 0.6);
+        }
+        .glass-card {
+            background: rgb(22, 22, 23, 0.3);
+            padding: 90px;
+            border-radius: 15px;
+            margin: 50px auto;
+            width: 80%;
+            max-width: 600px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 4px 15px rgba(244, 245, 244, 0.3);
+            transition: transform 0.3s, background 0.3s;
+        }
+        .glass-card:hover {
+            transform: scale(1.05);
+            background: rgba(22, 22, 23, 0.3);
+        }
+        .section-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .feedback {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .feedback h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #ffb74d;
+        }
+        .feedback form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .feedback input, .feedback textarea {
+            width: 60%;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 8px;
+            border: none;
+            font-size: 16px;
+            color: #333;
+        }
+        .feedback button {
+            padding: 12px 24px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            background: #ffb74d;
+            color: #290a5f;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .feedback button:hover {
+            background: hsl(36, 66%, 49%);
+        }
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #100f0f;
+            color: #f6ecec;
+        }
+        footer a {
+            color: #ebe8e3;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            color: #5ac8e7;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+        </ul>
+    </nav>
+    
+    <header class="profile-section" id="about">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQEKxFn-dZAC0w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724049948389?e=1746057600&v=beta&t=ALpNd0g_e-uMZdDduv6NEcB4X9NIZMYpkiqJp0QEUR0" alt="Profile Picture" class="profile-pic">
+        <h1 style="color: #ffb74d;">Anesh Meghwar</h1>
+        <p style="color: white; padding-left: 20px; padding-right: 20px; margin-left: 50px;margin-right: 30px;">
+            Passionate about data science, AI, and machine learning,
+             I specialize in developing intelligent solutions that drive innovation. 
+             With expertise in mobile app and backend development, I build scalable, 
+             high-performance applications that bridge the gap between data-driven insights and real-world impact. 
+             Constantly exploring new technologies, I thrive on solving complex problems and turning ideas into reality.
+             Let's connect and create the future together!
+        </p>
+        
+        
+    
+    <div class="section-container">
+        <div class="glass-card" id="skills">
+            <h1 style="color: #ffb74d;">Skills</h1>
+            <section id="skills">
+                
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <h3>Programming Languages</h3>
+                        <p>Python, Kotlin, Java, Dart, JavaScript</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Mobile Application Development</h3>
+                        <p>Flutter, Firebase (Backend Integration), Mobile App Development</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Machine Learning (ML)</h3>
+                        <p>Fundamentals of AI, Python for Data Science</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Web Development</h3>
+                        <p>SQL (Database Management), Firebase (Backend Services), Git</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Algorithms & Data Structures</h3>
+                        <p>Design and Analysis of Algorithms, Data Structures and Algorithms (DSA)</p>
+                    </div>
+                </div>
+            </section>
+            
+            <style>
+                /* Section styling */
+                #skills {
+                    text-align: center;
+                    padding: 7px 85px;
+                    background-color: #100f;
+                    color: white;
+                }
+            
+                h2 {
+                    margin-bottom: 20px;
+                    font-size: 2em;
+                }
+            
+                /* Scrollable row container */
+                .skills-container {
+                    display: flex;
+                    gap: 15px;
+                    overflow-x: auto;
+                    padding: 10px;
+                    scroll-snap-type: x mandatory;
+                    -webkit-overflow-scrolling: touch;
+                    white-space: nowrap;
+                }
+            
+                /* Skill cards */
+                .skill-card {
+                    flex: 0 0 auto;
+                    min-width: 250px;
+                    background: white;
+                    color: black;
+                    padding: 60px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+                    text-align: center;
+                    scroll-snap-align: start;
+                }
+            
+                /* Enable scrolling */
+                .skills-container::-webkit-scrollbar {
+                    height: 5px;
+                }
+            
+                .skills-container::-webkit-scrollbar-track {
+                    background: #100f;
+                }
+            
+                .skills-container::-webkit-scrollbar-thumb {
+                    background: white;
+                    border-radius: 10px;
+                }
+            </style>
+            
+    </section>
+        </div>
+        <div class="glass-card" id="projects">
+            <h1 style="color: #ffb74d;">Projects</h1>
+            <p>Project 1: plant disease detection, Project 2: mobile application Ui</p>
+        </div>
+        <div class="glass-card" id="education">
+            <h1 style="color: #ffb74d;">Education</h1>
+            <p>Bachelor's in Computer Science,University of Sindh jamshoro</p>
+        </div>
+        <div class="glass-card" id="certifications">
+            <h1 style="color: #ffb74d;">Certifications</h1>
+            <p>Machine Learning by Coursera, Data Science by IBM,
+                Foundations of Software Testing and Validation,
+                Introduction to TensorFlow for Artificial Intelligence,
+                 Machine Learning, and Deep Learning, Machine Learning and NLP Basics,
+                 AI For Everyone,What Is Generative AI?,Python for Data Science, AI & Development,mobile application,Technical Support Fundamentals,
+                 Troubleshooting and Debugging Techniques</p>
+        </div>
+    </div>
+    
+    <section class="feedback" id="feedback">
+        <h2>Your Feedback</h2>
+        <form id="feedback-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <textarea id="message" placeholder="Your Feedback" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="feedback-list"></div>
+    </section>
+    
+    <!-- EmailJS Script -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    
+    <script type="text/javascript">
+        (function(){
+           emailjs.init({
+             publicKey: "Z1YvtV_qWisF7cwul", // Replace with your EmailJS public key
+           });
+        })();
+     
+        document.getElementById("feedback-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent page refresh
+     
+            // Get input values
+            const name = document.getElementById("name").value;
+            const message = document.getElementById("message").value;
+     
+            // Define EmailJS service details
+            const serviceID = "service_xpq5zyb"; // Replace with your EmailJS service ID
+            const templateID = "template_snfh97u"; // Replace with your EmailJS template ID
+     
+            const templateParams = {
+                user_name: name, // Match {{user_name}} in the template
+                user_message: message // Match {{user_message}} in the template
+            };
+     
+            // Send the email
+            emailjs.send(serviceID, templateID, templateParams)
+                .then(response => {
+                    alert("Feedback sent successfully!");
+                    document.getElementById("feedback-form").reset(); // Clear the form
+                })
+                .catch(error => {
+                    alert("Failed to send feedback. Try again!");
+                    console.error("EmailJS Error:", error);
+                });
+        });
+     </script>
+    
+    <footer>
+        <p>© 2025 Anesh Meghwar | Software Engineer</p>
+        <div>
+            <a href="https://www.linkedin.com/in/anesh-rathore/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/Anesh03" target="_blank">GitHub</a> |
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+        </div>
+    </footer>
+</body>
+</html>
